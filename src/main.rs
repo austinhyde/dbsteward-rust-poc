@@ -1,5 +1,7 @@
+// allows us to use load_yaml!
 #[macro_use]
 extern crate clap;
+// allows us to use #[derive(Deserialise)] and #[serde()]
 #[macro_use]
 extern crate serde_derive;
 extern crate serde;
@@ -8,6 +10,7 @@ extern crate serde_xml_rs;
 use std::fs::File;
 use std::io::prelude::*;
 
+// declare that xml.rs is a standalone module with its own namespace
 mod xml;
 
 fn main() {
