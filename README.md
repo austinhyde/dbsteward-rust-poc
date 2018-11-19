@@ -4,8 +4,8 @@ I wanted to see what doing a re-write in Rust would look like, so here's the beg
 
 Notably
 
-* CLI flags parsed by [https://github.com/clap-rs/clap](clap), configured in `cli.yml`
-* XML parsed by [https://github.com/serde-rs/serde](serde)/[https://github.com/RReverser/serde-xml-rs](serde-xml-rs), configured in `xml.rs`
+* CLI flags parsed by [clap](https://github.com/clap-rs/clap), configured in `cli.yml`
+* XML parsed by [serde](https://github.com/serde-rs/serde)/[serde-xml-rs](https://github.com/RReverser/serde-xml-rs), configured in `xml.rs`
 * Using some macros to alleviate deserialization struct boilerplate
 
 So, for example,
