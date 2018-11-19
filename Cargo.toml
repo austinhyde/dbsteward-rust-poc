@@ -1,0 +1,10 @@
+[package]
+name = "dbsteward"
+version = "0.1.0"
+authors = ["Austin Hyde <austin109@gmail.com>"]
+
+[dependencies]
+clap = {version="2.32.0", features=["yaml"]}
+serde = "1.0.80"
+serde_derive = "1.0.80"
+serde-xml-rs = "0.2.1"

@@ -1,0 +1,16 @@
+name: dbsteward
+version: 2.0.0
+about: Database diffing tool
+args:
+  - old:
+      help: The old, or left, side of the diff
+      required: true
+      index: 1
+  - new:
+      help: The new, or right, side of the diff
+      required: true
+      index: 2
+  - out:
+      help: Where to output the result
+      required: true
+      index: 3

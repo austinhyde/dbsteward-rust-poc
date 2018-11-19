@@ -1,0 +1,15 @@
+<dbsteward>
+  <database>
+    <schema name="public" owner="$OWNER">
+      <table name="user" owner="$OWNER" primaryKey="id" description="users table">
+        <column name="id" type="uuid"/>
+        <column name="username" type="varchar(40)"/>
+        <column name="password" type="text"/>
+        <column name="registered_at" type="timestamptz"/>
+        <index name="username_idx" using="btree">
+          <indexDimension>username</indexDimension>
+        </index>
+      </table>
+    </schema>
+  </database>
+</dbsteward>
